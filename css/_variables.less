@@ -1,0 +1,51 @@
+@font-face {
+  font-family: SocialIco;
+  src: url("../font/Socialico.ttf");
+}
+@hColor: #494949;
+.after() {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+.padding-side-1() {
+  padding: 0 120px;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.padding-side-2() {
+  padding: 0 200px;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.padding-side-3() {
+  padding: 0 240px;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+.header() {
+  font-family: Montserrat;
+  color: @hColor;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0 0 35px;
+}
+.p() {
+  font-family: OpenSans;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: #6a6a6a;
+}
