@@ -1,4 +1,52 @@
 @font-face {
-  font-family: SocialIco;
+  font-family: "SocialIco";
   src: url("../font/Socialico.ttf");
+}
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url(../fonts/MontserratAlt-Medium.otf);
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url(../fonts/Montserrat-Bold.otf);
+}
+.width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.headerH {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #494949;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 0 0 35px;
+  text-align: center;
+}
+.button {
+  background-color: #0087be;
+  box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+  width: 166px;
+  height: 47px;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 18.25px;
+}
+.button:hover {
+  background-color: #180669;
+  cursor: pointer;
 }
