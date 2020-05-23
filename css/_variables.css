@@ -23,7 +23,7 @@
   src: url(../fonts/Montserrat-Bold.otf);
 }
 .width {
-  max-width: 1200px;
+  padding: 0 10.5%;
   margin: 0 auto;
 }
 .headerH {
