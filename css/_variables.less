@@ -67,10 +67,33 @@
   text-transform: uppercase;
   font-family: "Montserrat Regular", sans-serif;
   font-size: 18.25px;
+  transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+    background-color 2s ease-out;
   &:hover {
     background-color: #180669;
     cursor: pointer;
+    transform: scale(1.5);
   }
+}
+@keyframes best_img {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  33% {
+    transform: rotate(45deg) scale(1.33);
+  }
+  66% {
+    transform: rotate(-45deg) scale(1.66);
+  }
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+}
+.best .best_grid div:nth-child(n) .best_div:hover {
+  animation: best_img 2s linear infinite;
+}
+.best .best_grid div:nth-child(n) .best_img:hover {
+  animation: best_img 2s linear infinite;
 }
 
 // .padding-side-1() {
