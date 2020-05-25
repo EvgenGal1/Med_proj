@@ -67,10 +67,10 @@
   text-transform: uppercase;
   font-family: "Montserrat Regular", sans-serif;
   font-size: 18.25px;
-  transition: transform 1s cubic-bezier(0.68, -0.6, 0.32, 1.6),
-    background-color 2s ease-out;
+  transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+    background-color 1.5s ease-out;
   &:hover {
-    background-color: #180669;
+    background-color: #37c3a8;
     cursor: pointer;
     transform: scale(1.5);
   }
@@ -80,20 +80,67 @@
     transform: rotate(0deg) scale(0);
   }
   33% {
-    transform: rotate(45deg) scale(1.33);
+    transform: rotate(45deg) scale(1.3);
   }
   66% {
-    transform: rotate(-45deg) scale(1.66);
+    transform: rotate(-45deg) scale(1.6);
   }
-  0% {
-    transform: rotate(0deg) scale(0);
+  100% {
+    transform: rotate(0deg) scale(2);
   }
 }
-.best .best_grid div:nth-child(n) .best_div:hover {
-  animation: best_img 2s linear infinite;
+.best .best_grid div:nth-child(n) .best_div:hover .best_img {
+  animation: best_img 1.2s ease-in infinite alternate;
 }
-.best .best_grid div:nth-child(n) .best_img:hover {
-  animation: best_img 2s linear infinite;
+// .best .best_grid div:nth-child(n) .best_img:hover .best_img {
+//   animation: best_img 2s linear infinite alternate;
+// }
+
+.gal-gr {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   left: 0;
+  //   top: 0;
+  //   background-color: #d5d5d5;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+    .gal_trans_img,
+    .gal_trans_text {
+      position: absolute;
+      // width: 100%;
+      // height: 100%;
+      // left: 0;
+      // top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+      backface-visibility: hidden;
+      background-color: #fff;
+    }
+
+    .gal_trans_img {
+      max-width: 100%;
+      min-width: 100%;
+      height: auto;
+    }
+    .gal_trans_text {
+      transform: rotateY(180deg);
+    }
+    &:hover .gal_trans_img {
+      transform: rotateY(180deg);
+    }
+    &:hover .gal_trans_text {
+      transform: rotateY(360deg);
+    }
+  }
 }
 
 // .padding-side-1() {
@@ -120,3 +167,49 @@
 //     display: block;
 //   }
 // }
+.gal-gr2 {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   left: 0;
+  //   top: 0;
+  //   background-color: #d5d5d5;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    perspective: 1000px;
+    .gal_trans_img2,
+    .gal_trans_text2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      // left: 0;
+      // top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+      backface-visibility: hidden;
+      background-color: #fff;
+    }
+
+    .gal_trans_img2 {
+      max-width: 100%;
+      min-width: 100%;
+      // height: auto;
+    }
+    .gal_trans_text2 {
+      transform: rotateY(180deg);
+    }
+    &:hover .gal_trans_img2 {
+      transform: rotateY(180deg);
+    }
+    &:hover .gal_trans_text2 {
+      transform: rotateY(360deg);
+    }
+  }
+}
