@@ -78,6 +78,8 @@
 .gal-gr div .gal_trans_img,
 .gal-gr div .gal_trans_text {
   position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +90,6 @@
 .gal-gr div .gal_trans_img {
   max-width: 100%;
   min-width: 100%;
-  height: auto;
 }
 .gal-gr div .gal_trans_text {
   transform: rotateY(180deg);
@@ -97,36 +98,5 @@
   transform: rotateY(180deg);
 }
 .gal-gr div:hover .gal_trans_text {
-  transform: rotateY(360deg);
-}
-.gal-gr2 div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  perspective: 1000px;
-}
-.gal-gr2 div .gal_trans_img2,
-.gal-gr2 div .gal_trans_text2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-  backface-visibility: hidden;
-  background-color: #fff;
-}
-.gal-gr2 div .gal_trans_img2 {
-  max-width: 100%;
-  min-width: 100%;
-}
-.gal-gr2 div .gal_trans_text2 {
-  transform: rotateY(180deg);
-}
-.gal-gr2 div:hover .gal_trans_img2 {
-  transform: rotateY(180deg);
-}
-.gal-gr2 div:hover .gal_trans_text2 {
   transform: rotateY(360deg);
 }
