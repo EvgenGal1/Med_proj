@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="packages/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <div class="grid">
+    <div class="container">
       <header>
-        <nav>
+        <div class="nav">
           <div class="logo">
             <img src="img/Logo.png" alt="logo" />
           </div>
@@ -31,7 +35,9 @@
               +123 4567 8900
             </div>
           </div>
-          <hr />
+        </div>
+        <hr class="hr" />
+        <div class="menulist">
           <ul class="menu">
             <li>
               <a href="#">Home</a>
@@ -52,55 +58,78 @@
               <a href="#">Contact us</a>
             </li>
           </ul>
-          <img src="img/h-soc.png" alt="" />
-        </nav>
+          <div class="socials">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-vk"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
         <section class="slider">
-          <div class="baner">
-            <h1>We have Best Medicare plan options for you</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-            <a href="#" class="but">Read more</a>
+          <div class="slid_baner">
+            <div class="baner">
+              <h1>
+                We have Best Medicare <br />
+                plan options for you
+              </h1>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit <br />
+                voluptatem accusantium doloremque laudantium.
+              </p>
+              <button>Read more</button>
+            </div>
           </div>
           <div class="logo">
             <img src="img/Logo copy.png" alt="logo" />
           </div>
         </section>
-      </header>
-      <main>
         <section class="servic">
-          <div>
-            <img src="img/ser-1.png" alt="1" />
-            <h2>Best Treatment</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-          </div>
-          <div>
-            <img src="img/ser-2.png" alt="2" />
-            <h2>Emergency Help</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-          </div>
-          <div>
-            <img src="img/ser-3.png" alt="3" />
-            <h2>Medical Staff</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
-          </div>
-          <div>
-            <img src="img/ser-4.png" alt="4" />
-            <h2>Qualified Doctors</h2>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium.
-            </p>
+          <div class="servic_grid">
+            <div>
+              <div class="servic_img"></div>
+              <h2>Best Treatment</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+            <div>
+              <div class="servic_img"></div>
+              <h2>Emergency Help</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+            <div>
+              <div class="servic_img"></div>
+              <h2>Medical Staff</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
+            <div>
+              <div class="servic_img"></div>
+              <h2>Qualified Doctors</h2>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium.
+              </p>
+            </div>
           </div>
         </section>
         <section class="why">
@@ -108,24 +137,24 @@
             <h2>Why Choose Us ?</h2>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
+              accusantium doloremque laudantium, totam rem <br />
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+              architecto beatae vitae dicta sunt explicabo.
             </p>
           </div>
           <div class="prof">
             <div>
               <h2>Professional</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
+                Sed ut perspiciatis unde omnis iste natus error <br />
+                sit voluptatem accusantium doloremque laudantium.
               </p>
             </div>
             <div>
               <h2>Professional</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
+                Sed ut perspiciatis unde omnis iste natus error <br />
+                sit voluptatem accusantium doloremque laudantium.
               </p>
             </div>
             <div>
@@ -134,44 +163,58 @@
             <div>
               <h2>Professional</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
+                Sed ut perspiciatis unde omnis iste natus error <br />
+                sit voluptatem accusantium doloremque laudantium.
               </p>
             </div>
             <div>
               <h2>Professional</h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium.
+                Sed ut perspiciatis unde omnis iste natus error <br />
+                sit voluptatem accusantium doloremque laudantium.
               </p>
             </div>
           </div>
         </section>
         <section class="best">
-          <div>
-            <h2>1000+</h2>
-            <p class="p"></p>
-            <p>Happy Customers</p>
-          </div>
-          <div>
-            <h2>2017</h2>
-            <p class="p"></p>
-            <p>Top Hospitality</p>
-          </div>
-          <div>
-            <h2>1105</h2>
-            <p class="p"></p>
-            <p>Innovative Approach</p>
-          </div>
-          <div>
-            <h2>500+</h2>
-            <p class="p"></p>
-            <p>Lung Replacement</p>
+          <div class="best_grid">
+            <div>
+					<div class="best_div">
+						<div class="best_img"></div>
+					</div>
+              <h2>1000+</h2>
+              <p class="p"></p>
+              <p>Happy Customers</p>
+            </div>
+            <div>
+					<div class="best_div">
+						<div class="best_img"></div>
+					</div>
+              <h2>2017</h2>
+              <p class="p"></p>
+              <p>Top Hospitality</p>
+            </div>
+            <div>
+					<div class="best_div">
+						<div class="best_img"></div>
+					</div>
+              <h2>1105</h2>
+              <p class="p"></p>
+              <p>Innovative Approach</p>
+            </div>
+            <div>
+					<div class="best_div">
+						<div class="best_img"></div>
+					</div>
+              <h2>500+</h2>
+              <p class="p"></p>
+              <p>Lung Replacement</p>
+            </div>
           </div>
         </section>
         <section class="text">
           <div class="text_gr">
-            <div>
+            <div class="works">
               <h2>How we works</h2>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -180,7 +223,7 @@
                 laudantium.
               </p>
             </div>
-            <div>
+            <div class="our">
               <h2>Our creative</h2>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -189,7 +232,7 @@
                 laudantium.
               </p>
             </div>
-            <div>
+            <div class="img-tx1">
               <img src="img/text-1.jpg" alt="text1" />
               <p>Lorem ipsum dolor sit amet,</p>
               <div>April 19, 2017 | Dr. Jon Doe</div>
@@ -198,7 +241,7 @@
                 accusantium doloremque laudantium.
               </p>
             </div>
-            <div>
+            <div class="img-tx2">
               <img src="img/text-2.jpg" alt="text2" />
               <p>Lorem ipsum dolor sit amet,</p>
               <div>April 19, 2017 | Dr. Jon Doe</div>
@@ -207,20 +250,24 @@
                 accusantium doloremque laudantium.
               </p>
             </div>
-            <div>
-              <div class="slich">Heart Treatment</div>
+            <div class="spoiler1">
+              <div class="spol1">Heart Treatment</div>
               <p>
                 Sed ut perspiciatis unde omnis iste natus error s.it voluptatem
                 accusantium doloremque laudantium.Sed ut perspiciatis unde omnis
                 iste natus error sit voluptatem accusantium doloremque
                 laudantium.
               </p>
-              <div class="sclech2">Heart Treatment</div>
-              <div class="sclech2">Heart Treatment</div>
-              <div class="sclech2">Heart Treatment</div>
+            </div>
+            <div class="spoiler2">
+              <div class="spol2">Heart Treatment</div>
+              <div class="spol2">Heart Treatment</div>
+              <div class="spol2">Heart Treatment</div>
+            </div>
+            <div class="butMore">
+              <button>Read more</button>
             </div>
           </div>
-          <a href="#" class="but">Read more</a>
         </section>
         <section class="gal">
           <div class="gal_t">
@@ -228,29 +275,48 @@
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium.Sed ut perspiciatis unde omnis
-              iste natus error sit voluptatem accusantium doloremque laudantium.
+              iste natus error <br />
+              sit voluptatem accusantium doloremque laudantium.
             </p>
           </div>
-          <div class="gal-gr">
-            <div>
-              <img src="img/gal-1.jpg" alt="1" />
-            </div>
-            <div>
-              <img src="img/gal-2.jpg" alt="1" />
-            </div>
-            <div>
-              <img src="img/gal-3.jpg" alt="1" />
-            </div>
-            <div>
-              <img src="img/gal-4.jpg" alt="1" />
-            </div>
-            <div>
-              <img src="img/gal-5.jpg" alt="1" />
-            </div>
-            <div>
-              <img src="img/text-1.jpg" alt="1" />
-            </div>
-          </div>
+			 <div class="gal-gr">
+					<div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-1.jpg" alt="1" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+					 <div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-2.jpg" alt="2" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+					 <div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-3.jpg" alt="3" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+					 <div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-4.jpg" alt="4" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+					 <div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-5.jpg" alt="5" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+					 <div class="gal_trans">
+						<img class="gal_trans_img" src="img/gal-1.jpg" alt="6" />
+						<div class="gal_trans_text">
+							<div class="gal_cont">Lorem ipsum dolor</div>
+						</div>
+					 </div>
+			 </div>
         </section>
         <section class="oul">
           <div class="oul_t">
@@ -268,7 +334,17 @@
                 <h2>Dr Ricky Doe</h2>
                 <p>Assistant Surgeon</p>
               </div>
-              <img src="img/pers-soc.png" alt="1.1" />
+              <div class="oul_Soc">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-vk"></i>
+                </a>
+              </div>
             </div>
             <div class="oul_cont">
               <img src="img/pers2.jpg" alt="2" />
@@ -276,7 +352,17 @@
                 <h2>Dr Ricky Doe</h2>
                 <p>Assistant Surgeon</p>
               </div>
-              <img src="img/pers-soc.png" alt="2.1" />
+              <div class="oul_Soc">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-vk"></i>
+                </a>
+              </div>
             </div>
             <div class="oul_cont">
               <img src="img/pers3.jpg" alt="3" />
@@ -284,7 +370,17 @@
                 <h2>Dr Ricky Doe</h2>
                 <p>Assistant Surgeon</p>
               </div>
-              <img src="img/pers-soc.png" alt="3.1" />
+              <div class="oul_Soc">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-vk"></i>
+                </a>
+              </div>
             </div>
             <div class="oul_cont">
               <img src="img/pers4.jpg" alt="4" />
@@ -292,139 +388,177 @@
                 <h2>Dr Ricky Doe</h2>
                 <p>Assistant Surgeon</p>
               </div>
-              <img src="img/pers-soc.png" alt="4.1" />
+              <div class="oul_Soc">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-vk"></i>
+                </a>
+              </div>
             </div>
           </div>
         </section>
         <section class="bar">
-          <div>New Patient Special Offer Complimentary Consultation</div>
-          <a href="#" class="but">Read more</a>
-        </section>
-      </main>
-      <footer>
-        <div class="foo_gr">
-          <div>
-            <h3>Get in Touch</h3>
-            <ul>
-              <li>
-                free@psdfreebies.com <br />
-                free@psdfreebies.com
-              </li>
-              <li>
-                +123 456 7890 <br />
-                +123 456 7890
-              </li>
-              <li>
-                123, Main Road, New City, <br />
-                My Country 123456
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Quick Links</h3>
-            <ul>
-              About us
-              <li>Lorem1.1</li>
-              <li>Lorem1.2</li>
-              <li>Lorem1.3</li>
-            </ul>
-            <ul>
-              Blog
-              <li>Lorem2.1</li>
-              <li>Lorem2.2</li>
-              <li>Lorem2.3</li>
-            </ul>
-            <ul>
-              Contact us
-              <li>Lorem3.1</li>
-              <li>Lorem3.2</li>
-              <li>Lorem3.3</li>
-            </ul>
-            <ul>
-              Faq
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-            <ul>
-              Insurance
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-            <ul>
-              Contact us
-              <li>Lorem</li>
-              <li>Lorem</li>
-              <li>Lorem</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Our Services</h3>
-            <ul>
-              Work Injuries
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-            <ul>
-              Sport Injuries
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-            <ul>
-              Cold Laser Therapy
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-            <ul>
-              Massage Therapy
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-            <ul>
-              Physiotherapy
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-            <ul>
-              Chiropratic Therapy
-              <li>lorem</li>
-              <li>lorem</li>
-              <li>lorem</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Enquiry Form</h3>
-            <form action="index.html" method="get">
-              <fieldset>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  pattern="^([A-Za-z]+)$"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone"
-                  pattern="+7([0-9]{3}([0-9]{3})([0-9]{2})([0-9]{2})"
-                />
-                <textarea name="message" placeholder="Message"></textarea>
-                <input type="submit" value="Submit" />
-              </fieldset>
-            </form>
-          </div>
-        </div>
-        <img src="img/foo-soc.png" alt="f" />
-        <div class="foo">
-          Copyright © 2017. PSDFreebies.com | Best PSD Template for freelancer
-          and agencies
-        </div>
-      </footer>
-    </div>
-  </body>
+			  <div class="bar_text">
+				  <div>New Patient Special Offer Complimentary Consultation</div>
+				  <button>Read more</button>
+				</section>
+		</main>
+		<footer>
+			  <div class="foo_gr">
+				 <div class="f_get">
+					<h3>Get in Touch</h3>
+					<ul>
+					  <li>
+						 free@psdfreebies.com <br />
+						 free@psdfreebies.com
+					  </li>
+					  <li>
+						 +123 456 7890 <br />
+						 +123 456 7890
+					  </li>
+					  <li>
+						 123, Main Road, New City, <br />
+						 My Country 123456
+					  </li>
+					</ul>
+				 </div>
+				 <div class="f_link">
+					<h3>Ouick Links</h3>	
+					<ul>
+						<li>
+							About us
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Blog
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Contact us
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Faq
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Isurance
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Contact us
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+					</ul>
+				 </div>	
+				<div class="f_our">
+					<h3>Our Services</h3>
+					<ul>
+						<li>
+							Work Injuries
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Sport Injuries
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Cold Laser Therapy
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Massage Therapy
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Physiotherapy
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+						<li>
+							Chiropratic Therapy
+							<ul>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+								<li><a href="#">Lorem</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="f_form">
+					<h3>Enquiry Form</h3>
+					<form action="index.html" method="get">
+						<fieldset>
+						  <input
+							 type="text"
+							 name="name"
+							 placeholder="Name"
+							 pattern="^([A-Za-z]+)$"
+						  />
+						  <input
+							 type="tel"
+							 placeholder="Phone"
+							 pattern="+7([0-9]{3}([0-9]{3})([0-9]{2})([0-9]{2})"
+						  />
+						  <textarea name="message" placeholder="Message"></textarea>
+						  <input type="submit" value="Submit" />
+						</fieldset>
+					 </form>
+				</div>
+			  </div>
+		</footer>
+		<div class="foo">
+					 Copyright © 2017. PSDFreebies.com | Best PSD Template for freelancer
+					 and agencies
+		</div>
+		</div>
+	</body>
 </html>
