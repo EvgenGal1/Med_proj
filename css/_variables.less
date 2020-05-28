@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "SocialIco";
-  src: url("../font/Socialico.ttf");
-}
-@font-face {
   font-family: "Open Sans Regular";
   src: url(../fonts/OpenSans-Regular.ttf);
 }
@@ -75,9 +71,10 @@
     transform: scale(1.5);
   }
 }
+
 @keyframes best_img {
   0% {
-    transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(1);
   }
   33% {
     transform: rotate(45deg) scale(1.3);
@@ -92,56 +89,80 @@
 .best .best_grid div:nth-child(n) .best_div:hover .best_img {
   animation: best_img 1.2s ease-in infinite alternate;
 }
+
+@keyframes foo-sub {
+  0% {
+    transform: scale(1) skew(0);
+  }
+  33% {
+    transform: scale(1.7) skew(15deg, 15deg);
+  }
+  66% {
+    transform: scale(1.7) skew(-15deg, -15deg);
+  }
+  100% {
+    transform: scale(1.3) skew(0);
+  }
+}
+footer .foo_gr .f_form input[type="submit"]:hover {
+  animation: foo-sub 1.5s ease-in infinite alternate;
+}
+
 .gal-gr {
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
   .gal_trans {
     width: 100%;
     height: 100%;
     //  width: 440px;
-    height: 268px;
+    //  height: 268px;
     position: relative;
-    perspective: 1000px;
+    perspective: 700px;
     .gal_trans_img,
     .gal_trans_text {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 1s;
-      backface-visibility: hidden;
-      background-color: #37c3a8;
+      // position: absolute;
+      // width: 100%;
+      // height: 100%;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // transition: 1s;
+      // backface-visibility: hidden;
+      // background-color: #37c3a8;
     }
     &:hover .gal_trans_img {
-      transform: rotateY(180deg);
+      // transform: rotateY(180deg);
+      transform: rotateY(-90deg);
+      transition-delay: 0s;
     }
     &:hover .gal_trans_text {
-      transform: rotateY(360deg);
+      // transform: rotateY(360deg);
+      transform: rotateY(0deg);
+      transition-delay: 0.5s;
     }
     .gal_trans_img {
-      position: absolute;
-      max-width: 100%;
-      min-width: 100%;
-      // height: auto;
+      width: inherit;
+      height: inherit;
+      transition: 0.5s linear 0.5s;
+      transform: rotateY(0deg);
     }
     .gal_trans_text {
-      transform: rotateY(180deg);
-      //
-
-      //
-      //
+      width: inherit;
+      height: inherit;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 100%;
-      transition: 1s;
+      text-align: justify;
+      box-sizing: border-box;
+      // background: #43b1d2;
+      // background: -moz-linear-gradient(left, #43b1d2 0%, #37c3a8 100%);
+      // background: -webkit-linear-gradient(left, #43b1d2 0%, #37c3a8 100%);
+      background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+      // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43b1d2', endColorstr='#37c3a8', GradientType=1);
+      position: absolute;
+      left: 0;
+      top: 0;
+      // transform: rotateY(180deg);
+      transform: rotateY(90deg);
+      transition: 0.5s linear;
       .gal_cont {
         display: flex;
         justify-content: center;
@@ -171,151 +192,3 @@
     }
   }
 }
-
-// .gal-gr {
-//   height: 150px;
-//   perspective: 600;
-//   position: relative;
-//   width: 150px;
-// }
-// .gal_trans {
-//   height: 100%;
-//   position: absolute;
-//   transform-style: preserve-3d;
-//   transition: all 1s ease-in-out;
-//   width: 100%;
-// }
-// .gal_trans:hover {
-//   transform: rotateY(180deg);
-// }
-// .gal_trans_img,
-// .gal_trans_text {
-//   backface-visibility: hidden;
-//   height: 100%;
-//   position: absolute;
-//   width: 100%;
-// }
-// .gal_trans .gal_trans_text {
-//   transform: rotateY(180deg);
-// }
-
-// .gal-gr {
-//   //   position: absolute;
-//   //   width: 100%;
-//   //   height: 100%;
-//   //   left: 0;
-//   //   top: 0;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   position: relative;
-//   perspective: 1000px;
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   .gal_trans {
-//     //  width: 300px;
-//     //  height: 300px;
-//     //  position: relative;
-//     perspective: 1000px;
-//     height: 100%;
-//     position: relative;
-//     transform-style: preserve-3d;
-//     transition: all 1s ease-in-out;
-//     width: 100%;
-//     &:hover {
-//       transform: rotateY(180deg);
-//     }
-//     &:hover .gal_trans_img {
-//       // transform: rotateY(180deg);
-//     }
-//     &:hover .gal_trans_text {
-//       transform: rotateY(180deg);
-//       // transform: rotateY(360deg);
-//     }
-//     .gal_trans_img,
-//     .gal_trans_text {
-//       backface-visibility: hidden;
-//       height: 100%;
-//       position: absolute;
-//       width: 100%;
-//       //
-//       //
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       left: 0;
-//       top: 0;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       backface-visibility: hidden;
-//       background-color: #37c3a8;
-//     }
-//     .gal_trans_img {
-//       max-width: 100%;
-//       min-width: 100%;
-//       height: auto;
-//     }
-//     .gal_trans_text {
-//       transform: rotateY(180deg);
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       width: 100%;
-//       height: 100%;
-//       // transition: 1s;
-//       .gal_cont {
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         background-color: #0087be;
-//         box-shadow: 0px 0px 10px 20px rgba(00, 138, 170, 0.5);
-//         width: 58%;
-//         height: 50%;
-//         border: none;
-//         border-radius: 5px;
-//         color: #fff;
-//         padding: 10px;
-//         text-transform: uppercase;
-//         font-family: "Montserrat Regular", sans-serif;
-//         font-size: 12px;
-//         transition: 1s cubic-bezier(0.34, 1.56, 0.34, 1.56),
-//           background-color 0.5s ease-in, color 1.5s ease-out;
-//         &:hover {
-//           background-color: #055a49;
-//           cursor: pointer;
-//           transform: scale(1.5);
-//           font-size: 14px;
-//           color: #000;
-//           box-shadow: 0px 0px 5px 3px rgba(0, 138, 170, 1);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// .padding-side-1() {
-//   padding: 0 120px;
-//   &:after {
-//     content: "";
-//     clear: both;
-//     display: block;
-//   }
-// }
-// .padding-side-2() {
-//   padding: 0 200px;
-//   &:after {
-//     content: "";
-//     clear: both;
-//     display: block;
-//   }
-// }
-// .padding-side-3() {
-//   padding: 0 240px;
-//   &:after {
-//     content: "";
-//     clear: both;
-//     display: block;
-//   }
-// }

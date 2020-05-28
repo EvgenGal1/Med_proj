@@ -320,7 +320,7 @@ main {
   .prof {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr minmax(337px, auto) 1fr;
+    grid-template-columns: 1fr minmax(45%, auto) 1fr;
     grid-gap: 80px;
     justify-items: center;
     align-items: center;
@@ -328,6 +328,7 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       h2 {
         background: url(../img/why1.png) no-repeat left center;
         font-size: 30px;
@@ -379,6 +380,24 @@ main {
           grid-column-end: -1;
           grid-row-start: 1;
           grid-row-end: 2;
+        }
+        div {
+          &:nth-child(3) img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    .why {
+      .prof {
+        div {
+          h2 {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -525,6 +544,10 @@ main {
           "img-tx1 img-tx2"
           "spoiler1 spoiler2"
           "butMore butMore";
+        h2,
+        p {
+          text-align: justify;
+        }
       }
     }
   }
@@ -569,7 +592,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 35px;
-    justify-content: center;
+    justify-items: center;
     img {
       width: 100%;
     }
@@ -625,10 +648,64 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+
     .oul_cont {
       text-align: center;
-      // img {
-      // }
+      position: relative;
+      justify-self: center;
+
+      &:hover .oul-grid__transform {
+        visibility: visible;
+        transform: scale(1, 1) rotate(0deg);
+      }
+
+      &:hover img {
+        visibility: hidden;
+        transform: translateY(170px) scale(0, 0);
+      }
+
+      .oul-grid__transform {
+        width: 279px;
+        height: 279px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+        //   background: -moz-linear-gradient(left, #43b1d2 0%, #37c3a8 100%);
+        //   background: -webkit-linear-gradient(left, #43b1d2 0%, #37c3a8 100%);
+        //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#43b1d2', endColorstr='#37c3a8', GradientType=1);
+        position: absolute;
+        visibility: hidden;
+        transform: scale(0, 0) rotate(360deg);
+        transition-duration: 1s;
+
+        button {
+          background-color: #1a9bdc;
+          box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+          width: 166px;
+          height: 47px;
+          border: none;
+          border-radius: 30px;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-family: "Montserrat Regular", sans-serif;
+          font-size: 18.25px;
+          transition-duration: 1s;
+          &:hover {
+            background-color: #37c3a8;
+            cursor: pointer;
+            transform: scale(1.1, 1.1);
+          }
+        }
+      }
+
+      img {
+        transition-duration: 1s;
+        width: 100%;
+      }
+
       div {
         font-family: "Montserrat Medium", sans-serif;
         h2 {
@@ -637,12 +714,14 @@ main {
           color: #6f6f6e;
           margin: 30px 0 15px;
         }
+
         p {
           font-size: 18px;
           letter-spacing: -0.45px;
           margin-bottom: 30px;
         }
       }
+
       .oul_Soc a {
         font-size: 25px;
         color: #0087be;
@@ -761,6 +840,9 @@ footer {
           background: url(../img/arrow.png) no-repeat left center;
           padding-left: 40px;
           box-sizing: border-box;
+          &:hover {
+            color: #fff;
+          }
           //  &:hover ul {
           //    display: block;
           //  }
@@ -809,6 +891,12 @@ footer {
         font-size: 18.25px;
         letter-spacing: 0.35px;
         line-height: inherit;
+        transition: 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+          background-color 1.5s ease-out;
+        &:hover {
+          background-color: #37c3a8;
+          cursor: pointer;
+        }
       }
       textarea {
         resize: vertical;

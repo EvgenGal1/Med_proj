@@ -1,8 +1,4 @@
 @font-face {
-  font-family: "SocialIco";
-  src: url("../font/Socialico.ttf");
-}
-@font-face {
   font-family: "Open Sans Regular";
   src: url(../fonts/OpenSans-Regular.ttf);
 }
@@ -54,7 +50,7 @@
 }
 @keyframes best_img {
   0% {
-    transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(1);
   }
   33% {
     transform: rotate(45deg) scale(1.3);
@@ -69,44 +65,57 @@
 .best .best_grid div:nth-child(n) .best_div:hover .best_img {
   animation: best_img 1.2s ease-in infinite alternate;
 }
+@keyframes foo-sub {
+  0% {
+    transform: scale(1) skew(0);
+  }
+  33% {
+    transform: scale(1.7) skew(15deg, 15deg);
+  }
+  66% {
+    transform: scale(1.7) skew(-15deg, -15deg);
+  }
+  100% {
+    transform: scale(1.3) skew(0);
+  }
+}
+footer .foo_gr .f_form input[type="submit"]:hover {
+  animation: foo-sub 1.5s ease-in infinite alternate;
+}
 .gal-gr .gal_trans {
   width: 100%;
   height: 100%;
-  height: 268px;
   position: relative;
-  perspective: 1000px;
-}
-.gal-gr .gal_trans .gal_trans_img,
-.gal-gr .gal_trans .gal_trans_text {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-  backface-visibility: hidden;
-  background-color: #37c3a8;
+  perspective: 700px;
 }
 .gal-gr .gal_trans:hover .gal_trans_img {
-  transform: rotateY(180deg);
+  transform: rotateY(-90deg);
+  transition-delay: 0s;
 }
 .gal-gr .gal_trans:hover .gal_trans_text {
-  transform: rotateY(360deg);
+  transform: rotateY(0deg);
+  transition-delay: 0.5s;
 }
 .gal-gr .gal_trans .gal_trans_img {
-  position: absolute;
-  max-width: 100%;
-  min-width: 100%;
+  width: inherit;
+  height: inherit;
+  transition: 0.5s linear 0.5s;
+  transform: rotateY(0deg);
 }
 .gal-gr .gal_trans .gal_trans_text {
-  transform: rotateY(180deg);
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  transition: 1s;
+  text-align: justify;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: 0.5s linear;
 }
 .gal-gr .gal_trans .gal_trans_text .gal_cont {
   display: flex;
