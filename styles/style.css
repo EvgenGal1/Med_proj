@@ -138,7 +138,7 @@ h6 {
   }
 }
 .slider {
-  animation: sliderBan 30s linear infinite 0s;
+  animation: sliderBan 20s linear infinite 0s;
 }
 @keyframes best_img {
   0% {
