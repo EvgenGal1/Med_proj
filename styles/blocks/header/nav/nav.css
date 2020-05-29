@@ -1,0 +1,49 @@
+.nav {
+  display: grid;
+  margin: 90px 0 30px;
+  grid-gap: 60px;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+}
+.nav div:nth-child(2) {
+  background: url(../img/h-mail.png) no-repeat left center;
+}
+.nav div:nth-child(3) {
+  background: url(../img/h-time.png) left center no-repeat;
+}
+.nav div:nth-child(4) {
+  background: url(../img/h-tel.png) left center no-repeat;
+}
+.nav div:nth-child(n + 2) {
+  padding-left: 60px;
+  height: 51px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 15px;
+  color: #6a6a6a;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 1450px) {
+  .nav {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+  .nav .logo {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+@media (max-width: 992px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nav div:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+@media (max-width: 650px) {
+  .nav {
+    grid-template-columns: 1fr;
+  }
+}

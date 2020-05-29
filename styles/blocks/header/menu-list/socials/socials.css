@@ -1,0 +1,17 @@
+.socials a {
+  display: inline-block;
+  line-height: 90px;
+  font-size: 25px;
+  height: 90px;
+  color: #191919;
+  margin: 0 5px;
+}
+.socials a:hover {
+  color: #6a6a6a;
+}
+.socials a:first-child {
+  margin-left: 0;
+}
+.socials a:last-child {
+  margin-right: 0;
+}

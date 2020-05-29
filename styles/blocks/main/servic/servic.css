@@ -1,0 +1,59 @@
+.servic {
+  width: 100%;
+  background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+}
+.servic .servic-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+@media (max-width: 1280px) {
+  .servic .servic-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 730px) {
+  .servic .servic-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-row-gap: 45px;
+  }
+}
+.servic > :nth-child(1) .servUnit__img {
+  background: url(../img/ser-1.png) no-repeat center center;
+}
+.servic > :nth-child(2) .servUnit__img {
+  background: url(../img/ser-2.png) no-repeat center center;
+}
+.servic > :nth-child(3) .servUnit__img {
+  background: url(../img/ser-3.png) no-repeat center center;
+}
+.servic > :nth-child(4) .servUnit__img {
+  background: url(../img/ser-4.png) no-repeat center center;
+}
+.servic .servUnit {
+  padding: 60px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.servic .servUnit .servUnit__img {
+  width: 75px;
+  height: 75px;
+  padding: 0px;
+}
+.servic .servUnit h2 {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0;
+}
+.servic .servUnit p {
+  font-size: 14px;
+  font-family: "Open Sans Regular", sans-serif;
+  text-align: center;
+  color: #fff;
+}

@@ -1,0 +1,44 @@
+.menu {
+  li {
+    float: left;
+    padding: 0 20px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @media (max-width: 730px) {
+      float: none;
+      padding: 0;
+      clear: both;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: "Montserrat Regular", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+      color: #6c6c6c;
+      // color: @pColor;
+      line-height: 90px;
+
+      &:hover {
+        color: #262626;
+      }
+
+      @media (max-width: 992px) {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 730px) {
+        display: block;
+        padding: 0;
+      }
+    }
+  }
+}

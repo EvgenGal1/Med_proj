@@ -1,0 +1,30 @@
+.slider {
+  width: 100%;
+  position: relative;
+  background: url(../img/slider.jpg) center center no-repeat;
+  background-size: cover;
+  height: 640px;
+
+  .slider-baner {
+    //  .width();
+    padding: 0 10.5%;
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 680px) {
+      align-items: end;
+      padding: 30px 15px;
+    }
+
+    @import "baner/baner.less";
+  }
+  .logo {
+    position: absolute;
+    left: 51.5%;
+    bottom: 11.5%;
+  }
+}

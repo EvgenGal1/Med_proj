@@ -1,0 +1,133 @@
+header {
+  width: 100%;
+  padding: 0 10.5%;
+  margin: 0 auto;
+}
+header .hr {
+  height: 2px;
+  margin-top: 20px;
+  background-color: rgba(194, 194, 194, 0.31);
+}
+@media (max-width: 992px) {
+  header .hr {
+    margin-bottom: 20px;
+  }
+}
+header .nav {
+  display: grid;
+  margin: 90px 0 30px;
+  grid-gap: 60px;
+  grid-template-columns: repeat(4, minmax(280px, 1fr));
+}
+header .nav div:nth-child(2) {
+  background: url(../img/h-mail.png) no-repeat left center;
+}
+header .nav div:nth-child(3) {
+  background: url(../img/h-time.png) left center no-repeat;
+}
+header .nav div:nth-child(4) {
+  background: url(../img/h-tel.png) left center no-repeat;
+}
+header .nav div:nth-child(n + 2) {
+  padding-left: 60px;
+  height: 51px;
+  font-family: "Open Sans Regular", sans-serif;
+  font-size: 15px;
+  color: #6a6a6a;
+  padding-top: 5px;
+  box-sizing: border-box;
+}
+@media (max-width: 1450px) {
+  header .nav {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+  header .nav .logo {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+@media (max-width: 992px) {
+  header .nav {
+    grid-template-columns: 1fr 1fr;
+  }
+  header .nav div:nth-child(2) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+}
+@media (max-width: 650px) {
+  header .nav {
+    grid-template-columns: 1fr;
+  }
+}
+header .menulist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .menulist .menu li {
+  float: left;
+  padding: 0 20px;
+}
+header .menulist .menu li:first-child {
+  padding-left: 0;
+}
+header .menulist .menu li:last-child {
+  padding-right: 0;
+}
+@media (max-width: 730px) {
+  header .menulist .menu li {
+    float: none;
+    padding: 0;
+    clear: both;
+  }
+}
+header .menulist .menu li a {
+  text-decoration: none;
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #6c6c6c;
+  line-height: 90px;
+}
+header .menulist .menu li a:hover {
+  color: #262626;
+}
+@media (max-width: 992px) {
+  header .menulist .menu li a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 730px) {
+  header .menulist .menu li a {
+    display: block;
+    padding: 0;
+  }
+}
+header .menulist .socials a {
+  display: inline-block;
+  line-height: 90px;
+  font-size: 25px;
+  height: 90px;
+  color: #191919;
+  margin: 0 5px;
+}
+header .menulist .socials a:hover {
+  color: #6a6a6a;
+}
+header .menulist .socials a:first-child {
+  margin-left: 0;
+}
+header .menulist .socials a:last-child {
+  margin-right: 0;
+}
+@media (max-width: 992px) {
+  header .menulist {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+.menulist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @import "menu/menu.less";
+  @import "socials/socials.less";
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
