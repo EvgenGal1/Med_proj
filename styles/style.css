@@ -83,11 +83,15 @@ h6 {
 }
 @font-face {
   font-family: "Montserrat Medium";
-  src: url(../fonts/MontserratAlt-Medium.otf);
+  src: url(../fonts/Montserrat-Medium.otf);
 }
 @font-face {
   font-family: "Montserrat-Bold";
   src: url(../fonts/Montserrat-Bold.otf);
+}
+.widthHuk {
+  padding: 0 10.5%;
+  margin: 0 auto;
 }
 .headerH {
   font-family: "Montserrat-Bold", sans-serif;
@@ -1044,6 +1048,7 @@ footer .foo_gr .f_form input[type="submit"] {
 footer .foo_gr .f_form input[type="submit"]:hover {
   background-color: #37c3a8;
   cursor: pointer;
+  transition: 1s;
 }
 footer .foo_gr .f_form textarea {
   resize: vertical;
