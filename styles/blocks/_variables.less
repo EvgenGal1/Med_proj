@@ -103,7 +103,7 @@
   animation: sliderBan 20s linear infinite 0s;
 }
 
-@keyframes best_img {
+@keyframes best-block__img {
   0% {
     transform: rotate(0deg) scale(1);
   }
@@ -117,8 +117,9 @@
     transform: rotate(0deg) scale(2);
   }
 }
-.best .best_grid div:nth-child(n) .best_div:hover .best_img {
-  animation: best_img 1.2s ease-in infinite alternate;
+
+.best-block:nth-child(n) .best-block__div:hover .best-block__img {
+  animation: best-block__img 1.2s ease-in infinite alternate;
 }
 
 @keyframes foo-sub {
@@ -135,20 +136,20 @@
     transform: scale(1.3) skew(0);
   }
 }
-footer .foo_gr .f_form input[type="submit"]:hover {
+footer .footer-grid .foot-form input[type="submit"]:hover {
   animation: foo-sub 1.5s ease-in infinite alternate;
 }
 
-.gal-gr {
-  .gal_trans {
+.gallery-grid {
+  .gal-block {
     width: 100%;
     height: 100%;
     //  width: 440px;
     //  height: 268px;
     position: relative;
     perspective: 700px;
-    //  .gal_trans_img,
-    //  .gal_trans_text {
+    //  .gal-block__img,
+    //  .gal-block__text {
     //    position: absolute;
     //    width: 100%;
     //    height: 100%;
@@ -159,23 +160,23 @@ footer .foo_gr .f_form input[type="submit"]:hover {
     //    backface-visibility: hidden;
     //    background-color: #37c3a8;
     //  }
-    &:hover .gal_trans_img {
+    &:hover .gal-block__img {
       // transform: rotateY(180deg);
       transform: rotateY(-90deg);
       transition-delay: 0s;
     }
-    &:hover .gal_trans_text {
+    &:hover .gal-block__text {
       // transform: rotateY(360deg);
       transform: rotateY(0deg);
       transition-delay: 0.5s;
     }
-    .gal_trans_img {
+    .gal-block__img {
       width: inherit;
       height: inherit;
       transition: 0.5s linear 0.5s;
       transform: rotateY(0deg);
     }
-    .gal_trans_text {
+    .gal-block__text {
       width: inherit;
       height: inherit;
       display: flex;
@@ -194,7 +195,7 @@ footer .foo_gr .f_form input[type="submit"]:hover {
       // transform: rotateY(180deg);
       transform: rotateY(90deg);
       transition: 0.5s linear;
-      .gal_cont {
+      .gallery_cont {
         display: flex;
         justify-content: center;
         align-items: center;
