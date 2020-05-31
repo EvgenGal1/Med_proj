@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+  background-color: #171717;
+  margin: 0 auto;
+  padding: 110px 10.5%;
+
+  @media (max-width: 1280px) {
+    padding: 70px 10.5%;
+  }
+
+  .footer-grid {
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.43px;
+    color: #6c6c6c;
+    //  color: rgba(255, 255, 255, 0.51);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "foot-get foot-link foot-our foot-form";
+    h3 {
+      font-family: "Open Sans Bold", sans-serif;
+      margin-bottom: 67px;
+      font-size: 22px;
+      color: #fff;
+      font-weight: bold;
+      line-height: 1.09;
+      letter-spacing: 0.55px;
+    }
+    div:not(:first-child) li {
+      display: none;
+    }
+
+    @import "foot's.less";
+  }
+}

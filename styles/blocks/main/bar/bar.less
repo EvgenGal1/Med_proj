@@ -1,0 +1,35 @@
+.bar {
+  width: 100%;
+  background-color: #e2e2e2;
+  padding: 65px 0;
+
+  .bar-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    div {
+      font-family: "Montserrat Bold", sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: #494949;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .bar .bar-text {
+    flex-direction: column;
+    align-items: center;
+    button {
+      margin-top: 35px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.servic {
+  width: 100%;
+  background: linear-gradient(to right, #43b1d2 0%, #37c3a8 100%);
+  .servic-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+
+    @media (max-width: 1280px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 730px) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      grid-row-gap: 45px;
+    }
+
+    @import "servUnit/servUnit.less";
+  }
+}
