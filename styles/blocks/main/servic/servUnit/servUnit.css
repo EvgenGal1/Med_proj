@@ -1,0 +1,40 @@
+ > :nth-child(1) .servImg {
+  background: url(../img/ser-1.png) no-repeat center center;
+}
+ > :nth-child(2) .servImg {
+  background: url(../img/ser-2.png) no-repeat center center;
+}
+ > :nth-child(3) .servImg {
+  background: url(../img/ser-3.png) no-repeat center center;
+}
+ > :nth-child(4) .servImg {
+  background: url(../img/ser-4.png) no-repeat center center;
+}
+.servUnit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.servUnit_cont {
+  padding: 60px;
+  box-sizing: border-box;
+}
+.servUnit__img {
+  width: 75px;
+  height: 75px;
+  padding: 0px;
+}
+.servUnit h2 {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0;
+}
+.servUnit p {
+  font-size: 14px;
+  font-family: "Open Sans Regular", sans-serif;
+  text-align: center;
+  color: #fff;
+}

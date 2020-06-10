@@ -251,9 +251,11 @@ header .hr {
 }
 header .nav {
 	display: grid;
-	margin: 90px 0 30px;
 	grid-gap: 60px;
 	grid-template-columns: repeat(4, minmax(280px, 1fr));
+}
+header .nav_cont {
+	margin: 90px 0 30px;
 }
 header .nav div:nth-child(2) {
 	background: url(../img/h-mail.png) no-repeat left center;
@@ -277,6 +279,8 @@ header .nav div:nth-child(n + 2) {
 	header .nav {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 30px;
+	}
+	header .nav_cont {
 		margin-top: 30px;
 	}
 	header .nav .nav__logo {
@@ -442,16 +446,16 @@ main {
 		grid-row-gap: 45px;
 	}
 }
-.servic .servic-grid > :nth-child(1) .servUnit__img {
+.servic .servic-grid > :nth-child(1) .servImg {
 	background: url(../img/ser-1.png) no-repeat center center;
 }
-.servic .servic-grid > :nth-child(2) .servUnit__img {
+.servic .servic-grid > :nth-child(2) .servImg {
 	background: url(../img/ser-2.png) no-repeat center center;
 }
-.servic .servic-grid > :nth-child(3) .servUnit__img {
+.servic .servic-grid > :nth-child(3) .servImg {
 	background: url(../img/ser-3.png) no-repeat center center;
 }
-.servic .servic-grid > :nth-child(4) .servUnit__img {
+.servic .servic-grid > :nth-child(4) .servImg {
 	background: url(../img/ser-4.png) no-repeat center center;
 }
 .servic .servic-grid .servUnit {
